@@ -12,19 +12,15 @@
     <div class="container-fluid" id="masthead">
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
             <a class="navbar-brand" href="./index.html" id="logo">Veronica Przybyl</a>
-
-            <div class="navbar navbar-expand-sm" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">About</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-                </ul>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link active" href="./index.html">About<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="./contact.html">Contact</a>
+                </div>
             </div>
         </nav>
     </div>
@@ -33,6 +29,7 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-6">
+                <!-- I tried to set this up using nested rows and columns, but couldn't get it to work with the headings over top of the images. -->
                 <div class="main-section border">
                     <h1>Portfolio</h1>
 
@@ -70,11 +67,23 @@
 
             <div class="col-md-4">
                 <div class="sidebar border">
+                <div class="row">
+                    <div class="col-xs-12">
                     <h4>Connect with Me</h4>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col-xs-4">
                     <a target="_blank" href="https://github.com/hurricaneronron"><img src="./assets/images/logo-github.svg" class="social" alt="Github"></a>
+                    </div>
+                    <div class="col-xs-4">
                     <a target="_blank" href="https://www.linkedin.com/in/veronica-przybyl-564457155/"><img src="./assets/images/logo-linkedin.png" class="social" alt="LinkedIn"></a>
+                    </div>
+                    <div class="col-xs-4">
                     <a target="_blank" href="https://stackoverflow.com/users/9231969/hurricaneronron"><img src="./assets/images/logo-stackoverflow.png" class="social" alt="Stack Overflow"></a>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>

@@ -7,12 +7,8 @@ body {
     color: #777;
 }
 
-h1, h2, h3, p {
-    margin-bottom: 20px;
-}
-
-p:last-child {
-    margin-bottom: 0;
+body, html {
+    height: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -26,17 +22,17 @@ h1 {
     line-height: 49px;
     border-bottom: 3px solid #ddd;
     padding-bottom: 20px;
-} */
+}
 
-h2, h3, h4 {
+h2, h3 {
     font-size: 22px;
 }
 
 /* navbar */
 
-/* .navbar {
-    padding: 0 85px 0 240px;
-} */
+.navbar {
+    padding: 0;
+}
 
 #masthead {
     background: #fff;
@@ -61,6 +57,7 @@ h2, h3, h4 {
 
 #main-container {
     padding-top: 30px;
+    min-height: 100%;
 }
 
 .main-section {
@@ -101,12 +98,6 @@ h3, .sidebar, h2, h4 {
 .social {
     width: 62px;
     height: 62px;
-    margin-top: 8px;
-    margin-right: 5px;
-}
-
-.social:last-child {
-    margin: 0;
 }
 
 /* footer */
